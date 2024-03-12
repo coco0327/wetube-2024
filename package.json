@@ -1,19 +1,27 @@
 {
   "name": "wetube-2024",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "try to understand logic of Youtube",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coco0826/wetube-2024.git"
+  },
   "scripts": {
-    "dev": "nodemon --exec babel-node index.js"
+    "dev": "nodemon --exec babel-node src/server.js"
   },
   "author": "coco",
-  "license": "ISC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/coco0826/wetube-2024/issues"
+  },
+  "homepage": "https://github.com/coco0826/wetube-2024#readme",
   "dependencies": {
     "express": "^4.18.3"
   },
   "devDependencies": {
     "@babel/core": "^7.24.0",
     "@babel/node": "^7.23.9",
-    "@babel/preset-env": "^7.24.0"
+    "@babel/preset-env": "^7.24.0",
+    "nodemon": "^3.1.0"
   }
 }
