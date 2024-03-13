@@ -14,7 +14,6 @@ const home = (req, res) => res.send("I still love you");
 
 app.use(logger);
 app.get("/", home);
-asdfasdfasd;
 
 const handleListning = () =>
   console.log(`Server listening on port http://localhost:${PORT}`);
