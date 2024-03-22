@@ -6,13 +6,13 @@ import videoRouter from "./routers/videoRouter";
 import userRouter from "./routers/userRouter";
 
 const PORT = 4000;
-
 const app = express();
 const logger = morgan("dev");
 
 app.set("view engine", "pug"); //pug set up
 app.set("views", process.cwd() + "/src/views"); //default directory of views changed
 app.use(logger);
+app.use(express.urlencoded({ extended: true }));
 app.use("/", globalRouter);
 app.use("/videos", videoRouter);
 app.use("/users", userRouter);
